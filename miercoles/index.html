@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores Avanzados D:</title>
+
+	<style>
+		div > h2 {
+			background-color: gray; 
+		}
+
+		div > p {
+			background-color: yellow;
+		}
+
+		img {
+			width: 50%;
+			height: 50%;
+		}
+
+		div + p {
+			background-color:  gray;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1> Selector de hijos </h1>
+	
+	<div>
+		<h2> Panzekampfwagen VI Tiger Ausf. H </h2>
+		<img src="Imagenes/panzer.jpg" alt="Aqui habIa una imagen">
+		<p> Peso total: 56Tn </p>
+		<p> Velocidad mAxima: 40 km/h en carretera </p>
+		<p> Armamento principal: kampfwagenkanone 36/36 de 88mm </p>
+	</div>
+
+	<div>
+		<span> No tengo estilo porque no soy hijo directo :'v </span>
+	</div>
+
+	<div>
+		<h2>
+			Panzerkampfwagen V Panther Ausf.G
+		</h2>
+
+		<img src="Imagenes/panther_world_of_tanks-wide.jpg" alt="AquI tambiEn">
+
+		<div>
+			<p> Peso total: 45 Tn </p>
+		</div>
+		<p> Velocidad mAxima: 55 km/hr en carretera </p>
+
+		<div>
+			<p> Armamento principal: Kampwfagenkanone 42L/72 de 75mm </p>
+		</div>
+	</div>
+
+	<div>
+		
+	</div>
+
+</body>
+</html>

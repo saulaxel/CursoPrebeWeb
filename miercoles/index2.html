@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Selectores aUn mAs avanzados D::: </title>
+
+	<style>
+		a[tarjet] { /* En caso de que exista el atributo: */
+			background-color: gray;
+		}
+		
+		a[tarjet=_blank] {
+			background: red;
+		}
+
+		img {
+			width: 30%;
+			height: 30%;
+		}
+
+		img[title~=aleman] { /* Funciona si la palabra estA contenida */
+			border: 5px solid red;
+		}
+
+		img[title~=ruso] {
+			border: 5px solid blue;
+		}
+
+		p[lang|=en] { /* Solo funciona cuando el valor esta al inicio del valor del atributo */
+			background-color: gray;
+		}
+
+		div[class*=text] { /* Buscar palabra no unicamente completa */
+			background-color: #ffff00;
+		}
+
+	</style>
+
+</head>
+<body>
+  <p> Los links con un target van a quedar en gris </p>
+  <a href="http://www.w3schools.com"> w3schools.com </a>
+  <a href="http://www.facebook.com"> facebook.com </a>
+  <a href="http://www.youtube.com"> youtube.com </a>
+  <a href="http://www.google.com"> google.com </a>
+
+  <p> Seleccionar solo la clase text </p>
+  
+  <p> Se pone en gris todo lo que empiece con </p>
+  <div class="first_text"> El primer div. </div>
+  <div class="second"> El segundo div. </div>
+  <div class="text"> Esto es un parrafo :v </div>
+  <p class="test"> Esto es un parrafo :v. </p>
+
+  <p> ¿CuAl es el tanque alemam de lo siguientes carros? </p>
+
+  <img src="Imagenes/is7.jpg" title="tanque pesado ruso">
+  <img src="Imagenes/tiger.jpg" title="tanque pesado aleman">
+  <img src="Imagenes/t3485.jpg" title="tanque medio ruso">
+
+
+</body>
+</html>
